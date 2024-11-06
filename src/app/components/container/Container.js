@@ -2,11 +2,11 @@ import Image from 'next/image';
 
 const Container = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center py-16 px-8 bg-white">
+    <div className="flex flex-col md:flex-row justify-between items-center py-16 px-8 sm:px-6 md:px-8 bg-white min-h-screen">
       {/* Left Side - Text */}
-      <div className="w-full md:w-1/2 space-y-4">
+      <div className="w-full md:w-1/2 space-y-3">
         <h1 className="text-sm font-semibold text-gray-800">AI Message Writer</h1>
-        <h2 className="text-7xl font-bold text-gray-900">Draft outreach personalized to each lead</h2>
+        <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-gray-900">Draft outreach personalized to each lead</h2>
         <p className="text-base text-gray-700">
           Stop wasting time manually copywriting emails. Use Clay’s AI message writer to help draft personalized outreach that resonates with your prospective customers.
         </p>
@@ -16,14 +16,14 @@ const Container = () => {
       </div>
 
       {/* Right Side - Image */}
-      <div className="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center md:justify-end">
+      <div className="w-full md:w-1/2 flex justify-center md:justify-end">
         <Image
-          src="/rightImage.webp"  
+          src="/rightImage.webp"
           alt="AI Message Writer"
-          width={898} 
-          height={610}
+          width={750} 
+          height={700}
           objectFit="cover"
-          className="rounded-lg"
+          className="rounded-lg w-full md:w-auto"
         />
       </div>
     </div>

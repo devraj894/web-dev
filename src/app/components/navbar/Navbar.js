@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex justify-between items-center px-8 py-4 bg-white shadow">
+    <nav className="flex justify-between items-center px-4 sm:px-6 md:px-8 py-4 bg-white shadow overflow-hidden">
       {/* Logo */}
       <div className="flex items-center">
         <Image
@@ -69,7 +69,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Drawer */}
       {isOpen && (
-        <div className="fixed inset-0 bg-white z-50 flex flex-col items-center space-y-6 pt-20">
+       <div className="fixed inset-0 w-full bg-white z-50 flex flex-col items-center space-y-6 pt-20 overflow-x-hidden">
           {/* Close button */}
           <button onClick={() => setIsOpen(false)} className="absolute top-5 right-5 text-2xl text-black">
             <FiX />
