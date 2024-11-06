@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer
       style={{
-        background: "linear-gradient(to bottom, #000000, #1a1a1a)", // Gradient effect from black to dark gray
+        background: "linear-gradient(to bottom, #000000, #1a1a1a)", 
         color: "#ffffff",
         padding: "2rem 1rem",
       }}
@@ -31,7 +31,7 @@ const Footer = () => {
             style={{
               flex: "1 1 180px",
               margin: "1rem",
-              textAlign: "center", // Center text alignment for mobile
+              textAlign: "center", 
             }}
           >
             <h3 style={{ marginBottom: "1rem", fontSize: "1.1rem", borderBottom: "1px solid #444", paddingBottom: "0.5rem" }}>
